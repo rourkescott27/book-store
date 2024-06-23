@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 
 import { PORT, mongoDBURL } from './config.js';
 import booksRoute from './routes/booksRoute.js';
@@ -7,6 +8,7 @@ import booksRoute from './routes/booksRoute.js';
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.get('/', (request, response) => {
     console.log(request);
