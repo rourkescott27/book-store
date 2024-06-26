@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Spinner from "../components/Spinner.jsx";
 import { Link } from "react-router-dom";
 import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox } from "react-icons/md";
+
+import Spinner from "../components/Spinner.jsx";
 
 const Home = () => {
     const [books, setBooks] = useState([]);
