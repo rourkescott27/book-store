@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Spinner from "../../components/Spinner.jsx";
+import Spinner from "../components/Spinner.jsx";
 import { Link } from "react-router-dom";
 import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
@@ -63,7 +63,7 @@ const Home = () => {
                                 </td>
                                 <td className="border border-slate-700 rounded-md text-center">
                                     <div className="flex justify-center gap-x-4">
-                                        <Link to={`/books/details/${book.id}`}>
+                                        <Link to={`/books/details/${book._id}`}>
                                             <BsInfoCircle className="text-2xl text-green-800" />
                                         </Link>
                                         <Link to={`/books/edit/${book._id}`}>
