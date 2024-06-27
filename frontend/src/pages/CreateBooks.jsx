@@ -27,7 +27,7 @@ const CreateBook = () => {
             })
             .catch((error) => {
                 setLoading(false);
-                alert('An unknown error occurred !! Please check the console');
+                alert('An unknown error occurred !! Please check the console for more details');
             });
     };
 

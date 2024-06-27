@@ -25,7 +25,7 @@ const EditBook = () => {
             })
             .catch((error) => {
                 setLoading(false);
-                alert('An unknown error occurred!! Please check the console')
+                alert('An unknown error occurred!! Please check the console for more details')
                 console.log(error);
             })
     }, []);
@@ -45,7 +45,7 @@ const EditBook = () => {
             })
             .catch((error) => {
                 setLoading(false);
-                alert('An unknown error occurred !! Please check the console');
+                alert('An unknown error occurred !! Please check the console for more details');
             });
     };
 
